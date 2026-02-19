@@ -1,0 +1,34 @@
+version: "1.0.0"
+description: "ESP-IDF utility functions including memory helpers, buffers, and linked lists"
+url: "https://github.com/n7get/esp-utils.git"
+
+dependencies:
+  idf:
+    version: ">=5.0.0"
+
+targets:
+  - esp32
+  - esp32s2
+  - esp32s3
+  - esp32c3
+  - esp32c2
+  - esp32c6
+  - esp32h2
+
+maintainers:
+  - "Robert N Ambrose <weblib@muttsoft.com>"
+
+license: "MIT"
+
+tags:
+  - utilities
+  - memory-management
+  - data-structures
+  - buffer
+
+files:
+  include:
+    - "include/*"
+  exclude:
+    - "*.tmp"
+    - "*.bak"

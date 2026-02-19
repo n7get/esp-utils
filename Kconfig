@@ -1,0 +1,13 @@
+menu "ESP Utils Configuration"
+
+    config ESP_UTILS_LOG_MEM_FUNCTIONS
+        bool "Log memory allocation functions"
+        default n
+        help
+            Enable logging for memory allocation/deallocation via mem_helpers.
+            When enabled, malloc, calloc, free, and strdup operations are logged
+            with ESP_LOGI, showing size and pointer addresses.
+
+            This is useful for debugging memory usage but adds overhead.
+
+endmenu
